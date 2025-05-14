@@ -3,6 +3,7 @@ body {
     padding: 0;
     text-decoration: none;
     color: rgb(39, 39, 39);
+    font-size: 2rem;
 }
 
 /* the navigation bar basic style */
@@ -11,13 +12,22 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.7em 1.5em;
+    padding: 0.3em 0.4em;
 }
 
 /* links to not be underlined/black */
 a {
     text-decoration: none;
     color: rgb(39, 39, 39);
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: rgb(54, 54, 54);
 }
 
 /* organize the lists */
@@ -63,6 +73,10 @@ input {
     border-radius: 0.3em;
     border-width: 0.2em;
     padding: 0.3em;
+    
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    font-size: 1.5rem;
 }
 
 input:hover { background-color: rgb(189, 189, 189); }
@@ -80,11 +94,11 @@ input:focus { outline: none; }
 
 /* the navigation bar basic style */
 .site_navigation_preview {
-    margin-top: 1em;
+    margin-top: 0.8em;
     background-color: rgb(230, 206, 214);
     display: flex;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 0.5em 1em;
+    padding: 0.8em 1em;
 }
