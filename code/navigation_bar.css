@@ -102,3 +102,12 @@ input:focus { outline: none; }
     text-align: center;
     padding: 0.8em 1em;
 }
+
+.footbar {
+    margin-top: 30px;
+    background-color: rgb(177, 138, 152);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3em 0.4em;
+}
