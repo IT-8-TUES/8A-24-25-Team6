@@ -97,10 +97,10 @@ input:focus { outline: none; }
     margin-top: 0.8em;
     background-color: rgb(230, 206, 214);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0.8em 1em;
+    padding: 0em 0em;
 }
 
 .footer-navbar {
