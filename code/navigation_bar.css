@@ -1,9 +1,38 @@
+/* importing fonts (quicksand) */
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/static/Quicksand-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Quicksand-Light';
+  src: url('fonts/static/Quicksand-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Quicksand-Medium';
+  src: url('fonts/static/Quicksand-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Quicksand-SemiBold';
+  src: url('fonts/static/Quicksand-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url('fonts/static/Quicksand-Bold.ttf');
+  font-weight: 700;
+}
+
+/* basic body style stuff */
 body {
     margin: 0;
     padding: 0;
     text-decoration: none;
     color: rgb(39, 39, 39);
     font-size: 2rem;
+    font-family: 'Quicksand';
 }
 
 /* the navigation bar basic style */
@@ -24,6 +53,7 @@ a {
 
 a:hover {
     color: black;
+    font-family: 'Quicksand-SemiBold';
 }
 
 a:active {
@@ -63,20 +93,27 @@ li {
 
 /* the search bar*/
 .header-input_wrapper {
-    position: relative;
+    margin: 0em;
 }
 
 input {
+    right: 0em;
+    position: static;
+    width: 8em;
+
     background-color: rgb(221, 221, 221);
     border-color: white;
     border-style: double;
     border-radius: 0.3em;
     border-width: 0.2em;
-    padding: 0.3em;
-    
+    padding: 0.3em; 
+    padding-right: 0em;
+
+    /* style font */
     text-decoration: none;
     color: rgb(39, 39, 39);
     font-size: 1.5rem;
+    font-family: 'Quicksand'
 }
 
 input:hover { background-color: rgb(189, 189, 189); }
@@ -85,16 +122,17 @@ input:focus { outline: none; }
 /* the icon INSIDE the search bar*/
 #search_icon {
     position: absolute;
-    right: 0.2em;
-    width: 1.8em;
-    height: auto;  
+    right: 0.7em;
+    top: 1.3em;
+    width: 1.2em;
+    height: auto;
     pointer-events: none;
 }
-
 
 /* the navigation bar basic style */
 .header-site_navigation_preview {
     margin-top: 0.8em;
+    margin-bottom: 0.8em;
     background-color: rgb(230, 206, 214);
     display: flex;
     justify-content: center;
@@ -103,6 +141,12 @@ input:focus { outline: none; }
     padding: 0em 0em;
 }
 
+.header-site_navigation_preview p {
+    display: flex;
+    align-items: center;
+}
+
+/* footer stuff */
 .footer-navbar {
     margin-top: 30px;
     background-color: rgb(177, 138, 152);
@@ -113,5 +157,5 @@ input:focus { outline: none; }
 }
 
 #footer_p {
-    padding-right: 12rem;
+    padding-right: 3rem;
 }
