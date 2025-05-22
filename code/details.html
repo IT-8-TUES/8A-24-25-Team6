@@ -50,19 +50,22 @@
     <script>
         // creates constant cardID (fetches data previously stored - the selected card)
         const cardId = localStorage.getItem("selectedCardId");
+        console.log(cardsData);
+        console.log(cardId);
+        console.log(cardsData.cardId);
         // to grab the info about that selected card with its id
-        const card = cardsData[cardId];
+        const card = cardsData.cardId;
         const container = document.getElementById("cards-details_container");
 
         // create the div cards-details_container's stuff
         container.innerHTML = 
-            "<img src='" + card.imgSrc + "' alt='" + card.title + "'>" +
-            "<span>" + card.title + "</span>" +
-            "<p>" + card.description + "</p>" +
+            "<img src='" + card.img_src + "' alt='" + card.img_title + "'>" +
+            "<h2>" + card.title + "</h2>" +
+            "<p><strong>Artist:</strong> " + card.artist + "</p>" +
             "<p><strong>Genre:</strong> " + card.genre + "</p>" +
-            "<audio controls src='" + card.audioSrc + "'></audio>" +
-            "<br>" +
-            "<a href='" + card.audioSrc + "' download>Download</a>";
+            "<p>" + card.desc + "</p>" +
+            "<audio controls src='" + card.audio_src + "'></audio>" +
+            "<br><a href='" + card.audio_src + "' download>Download</a>";
 
     </script>
 </body>
