@@ -58,12 +58,14 @@
         if (cardData) {
             const container = document.getElementById("details-container");
             container.innerHTML = `
-                <div class="cards_individualy">
-                    <img class="cards-img" src="${cardData.img_src}" title="${cardData.img_title}">
-                    <p><span class="cards-title">${cardData.title}</span></p>
-                    <p><span class="cards-characteristics">ARTIST:</span> <span class="cards-description">${cardData.artist}</span></p>
-                    <p><span class="cards-characteristics">GENRE:</span> <span class="cards-description">${cardData.genre}</span></p>
-                    <p><span class="cards-characteristics">DESCRIPTION:</span> <span class="cards-description">${cardData.desc}</span></p>
+                <div class="details_container">
+                    <img id="details-img" class="cards-img" src="${cardData.img_src}" title="${cardData.img_title}">
+                    <div class=details-text>
+                        <p><span class="cards-title" id="details-title">${cardData.title}</span></p>
+                        <p><span class="cards-characteristics">ARTIST:</span> <span class="cards-description">${cardData.artist}</span></p>
+                        <p><span class="cards-characteristics">GENRE:</span> <span class="cards-description">${cardData.genre}</span></p>
+                        <p><span class="cards-characteristics">DESCRIPTION:</span> <span class="cards-description">${cardData.desc}</span></p>
+                    </div>        
                 </div>
             `;
         } else {

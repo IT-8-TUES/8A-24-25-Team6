@@ -12,7 +12,7 @@ const cardsData = {
         artist: "Bulgarian song",
         genre: "folk",
         desc: ".",
-        img_title: "dunavsko horo",
+        img_title: "mqtalo lenche qbulka",
         img_src: "images/img/QBULKA.png"
     },
     "card-dunavsko":{

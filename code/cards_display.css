@@ -1,3 +1,5 @@
+/* home index.html cards */
+
 .cards {
     display: flex;
     justify-content: space-evenly;
@@ -5,7 +7,7 @@
     flex-wrap: wrap;
 }
 
-.cards_individualy {
+.cards_individualy, .details_container {
     background-color: rgb(249, 249, 249);
     padding: 2rem;
     border-width: 1rem;
@@ -38,4 +40,29 @@
 
 .cards-description {
     font-family: 'Quicksand-Light';
+}
+
+
+/* details html */
+.details_container {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    max-width: 40em;
+    max-height: 22em;
+}
+
+#details-img {
+    width: 20em;
+    height: 20em;
+}
+
+.details-text {
+    max-width: 20em;
+    max-height: 20em;
+}
+
+#details-title {
+    font-size: 2em;
+    font-family: 'Quicksand-Bold';
 }
