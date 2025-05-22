@@ -90,6 +90,18 @@ li {
     height: 2em;
     width: auto;
 }
+/* liniite between nav items */
+.nav_list li {
+    position: relative;
+}
+
+.nav_list li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -12px;
+    color: #4b3d3d;
+    font-weight: 300;
+}
 
 /* the search bar*/
 .header-input_wrapper {
