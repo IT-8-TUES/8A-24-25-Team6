@@ -32,19 +32,7 @@
     </header>
 
     <main>
-        <div class = "cards">
-            <div class = "card" id = "card-bqla_roza">
-                <img class = "cards-img" src = "images/img/BQLA_ROZA.png", title = "bqla roza"> 
-                <p> <span class = "cards-title"> BQLA ROZA </span> </p>
-                <p> 
-                    <span class = "cards-characteristics"> ARTIST:</span> 
-                    <span class = "cards-description"> BG song </span>
-                </p>
-                <p>
-                    <span class = "cards-characteristics"> GENRE:</span> 
-                    <span class = "cards-description"> folk </span>
-                </p>
-            </div>
+        <div id = "cards-details_container">
         </div>
     </main>
 
@@ -59,6 +47,26 @@
     </footer>
 
     <script src = "cards.js"> </script>
-    
+    <script>
+        // creates constant cardID (fetches data previously stored - the selected card)
+        const cardId = localStorage.getItem("selectedCardId");
+        console.log(cardsData);
+        console.log(cardId);
+        console.log(cardsData.cardId);
+        // to grab the info about that selected card with its id
+        const card = cardsData.cardId;
+        const container = document.getElementById("cards-details_container");
+
+        // create the div cards-details_container's stuff
+        container.innerHTML = 
+            "<img src='" + card.img_src + "' alt='" + card.img_title + "'>" +
+            "<h2>" + card.title + "</h2>" +
+            "<p><strong>Artist:</strong> " + card.artist + "</p>" +
+            "<p><strong>Genre:</strong> " + card.genre + "</p>" +
+            "<p>" + card.desc + "</p>" +
+            "<audio controls src='" + card.audio_src + "'></audio>" +
+            "<br><a href='" + card.audio_src + "' download>Download</a>";
+
+    </script>
 </body>
 </html>
