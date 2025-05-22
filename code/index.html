@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>swiftie</title>
     <link rel="stylesheet" href="navigation_bar.css">
     <link rel="stylesheet" href="cards_display.css">
@@ -82,7 +83,6 @@
         </div>
     </footer>
 
-    <script src = "cards.js"> </script>
     <script>
         // create a function called openDetails in which to send the info of 
         // data and opened files to localStorage
@@ -91,7 +91,16 @@
             localStorage.setItem("selectedCardId", cardId);
             window.location.href = "details.html";
         }
+
+        document.querySelectorAll(".cards_individualy").forEach(card => {
+            card.addEventListener("click", () => {
+                openDetails(card.id);
+            });
+        });
+
     </script>
+    
+    <script src = "cards.js"> </script> 
     
 </body>
 </html>
