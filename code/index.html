@@ -33,7 +33,7 @@
 
     <main>
         <div class = "cards">
-            <div class = "card" id = "card-bqla_roza">
+            <div class = "cards_individualy" id = "card-bqla_roza">
                 <img class = "cards-img" src = "images/img/BQLA_ROZA.png", title = "bqla roza"> 
                 <p> <span class = "cards-title"> BQLA ROZA </span> </p>
                 <p> 
@@ -45,7 +45,7 @@
                     <span class = "cards-description"> folk </span>
                 </p>
             </div>
-            <div class = "card" id = "card-qbulka">
+            <div class = "cards_individualy" id = "card-qbulka">
                 <img class = "cards-img" src = "images/img/QBULKA.png", title = "mqtalo lenche qbulka"> 
                 <p> <span class = "cards-title"> MQTALO LENCHE QBULKA </span> </p>
                 <p> 
@@ -57,7 +57,7 @@
                     <span class = "cards-description"> folk </span>
                 </p>
             </div>
-            <div class = "card" id = "card-dunavsko">
+            <div class = "cards_individualy" id = "card-dunavsko">
                 <img class = "cards-img" src = "images/img/DUNAVKO_HORO.png", title = "dunavsko horo"> 
                 <p> <span class = "cards-title"> DUNAVSKO HORO </span> </p>
                 <p> 
@@ -91,6 +91,13 @@
             localStorage.setItem("selectedCardId", cardId);
             window.location.href = "details.html";
         }
+
+        document.querySelectorAll(".cards_individualy").forEach(card => {
+            card.addEventListener("click", () => {
+                openDetails(card.id);
+            });
+        });
+
     </script>
     
 </body>
