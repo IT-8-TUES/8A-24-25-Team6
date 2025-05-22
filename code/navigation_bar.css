@@ -56,6 +56,11 @@ a:hover {
     font-family: 'Quicksand-SemiBold';
 }
 
+.nav_list a.active {
+    color: black;
+    font-family: 'Quicksand-SemiBold';
+}
+
 a:active {
     color: rgb(54, 54, 54);
 }
