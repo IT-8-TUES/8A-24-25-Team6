@@ -144,6 +144,7 @@ input:focus { outline: none; }
 .header-site_navigation_preview p {
     display: flex;
     align-items: center;
+    margin: 0.3rem;
 }
 
 /* footer stuff */
@@ -158,4 +159,9 @@ input:focus { outline: none; }
 
 #footer_p {
     padding-right: 3rem;
+}
+
+span {
+    margin: 0em;
+    padding: 0em;
 }
