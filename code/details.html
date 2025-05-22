@@ -33,19 +33,7 @@
     </header>
 
     <main>
-        <div class = "cards">
-            <div class = "card" id = "card-bqla_roza">
-                <img class = "cards-img" src = "images/img/BQLA_ROZA.png", title = "bqla roza"> 
-                <p> <span class = "cards-title"> BQLA ROZA </span> </p>
-                <p> 
-                    <span class = "cards-characteristics"> ARTIST:</span> 
-                    <span class = "cards-description"> BG song </span>
-                </p>
-                <p>
-                    <span class = "cards-characteristics"> GENRE:</span> 
-                    <span class = "cards-description"> folk </span>
-                </p>
-            </div>
+        <div id = "details-container">
         </div>
     </main>
 
@@ -60,6 +48,26 @@
     </footer>
 
     <script src = "cards.js"> </script>
-    
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const cardId = urlParams.get("id");
+
+        const cardData = cardsData[cardId];
+
+        if (cardData) {
+            const container = document.getElementById("details-container");
+            container.innerHTML = `
+                <div class="cards_individualy">
+                    <img class="cards-img" src="${cardData.img_src}" title="${cardData.img_title}">
+                    <p><span class="cards-title">${cardData.title}</span></p>
+                    <p><span class="cards-characteristics">ARTIST:</span> <span class="cards-description">${cardData.artist}</span></p>
+                    <p><span class="cards-characteristics">GENRE:</span> <span class="cards-description">${cardData.genre}</span></p>
+                    <p><span class="cards-characteristics">DESCRIPTION:</span> <span class="cards-description">${cardData.desc}</span></p>
+                </div>
+            `;
+        } else {
+            document.getElementById("details-container").innerHTML = "<p>no</p>";
+        }
+    </script>
 </body>
 </html>
