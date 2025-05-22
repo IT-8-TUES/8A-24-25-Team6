@@ -159,6 +159,37 @@ input:focus { outline: none; }
     margin: 0.3rem;
 }
 
+/* back button */
+.header-site_navigation_preview {
+    position: relative;          
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    background-color: rgb(230, 206, 214);
+    text-align: center;         
+    padding: 0.5em 0;
+    height: 3rem;                
+}
+
+.back-button {
+    position: absolute;          
+    left: 1em;                   
+    top: 50%;                   
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(177, 138, 152);
+    padding: 0.2em 0.6em;
+    border: 2px solid rgb(177, 138, 152);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.back-button:hover {
+    background-color: rgb(177, 138, 152);
+    color: white;
+}
+
 /* footer stuff */
 .footer-navbar {
     margin-top: 30px;
