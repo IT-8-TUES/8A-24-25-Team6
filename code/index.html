@@ -6,7 +6,6 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>swiftie</title>
     <link rel="stylesheet" href="navigation_bar.css">
-    <link rel="stylesheet" href="cards_display.css">
 </head>
 <body>
     <header>
@@ -17,62 +16,20 @@
                 <li><p><strong>swiftie</strong></p></li>
             </ul>
             <ul class = "nav_list">
-                <li><a href="index.html">HOME</a></li>
+                <li><a href="home.html">HOME</a></li>
                 <li><a href="genres.html">GENRES</a></li>
                 <li><a href="playlist.html">PLAYLIST</a></li>
                 <li><a href="about_us.html">ABOUT US</a></li>
             </ul> 
             <div class = "header-input_wrapper">
+                <img src="images/search-icon.png" alt="search icon" id="search_icon">
                 <input type="text" placeholder="SEARCH..">
-                <img src="images/search-icon.png" alt="search icon" id="search_icon">  
             </div>
         </div>
         <div class = "header-site_navigation_preview">
-            <p> home </p>     
+            <p style="display: hidden; color:rgb(230, 206, 214);"> . </p>
         </div>
     </header>
-
-    <main>
-        <div class = "cards">
-            <div class = "cards_individualy" id = "card-bqla_roza">
-                <img class = "cards-img" src = "images/img/BQLA_ROZA.png", title = "bqla roza"> 
-                <p> <span class = "cards-title"> BQLA ROZA </span> </p>
-                <p> 
-                    <span class = "cards-characteristics"> ARTIST:</span> 
-                    <span class = "cards-description"> BG song </span>
-                </p>
-                <p>
-                    <span class = "cards-characteristics"> GENRE:</span> 
-                    <span class = "cards-description"> folk </span>
-                </p>
-            </div>
-            <div class = "cards_individualy" id = "card-qbulka">
-                <img class = "cards-img" src = "images/img/QBULKA.png", title = "mqtalo lenche qbulka"> 
-                <p> <span class = "cards-title"> MQTALO LENCHE QBULKA </span> </p>
-                <p> 
-                    <span class = "cards-characteristics"> ARTIST:</span> 
-                    <span class = "cards-description"> BG song </span>
-                </p>
-                <p>
-                    <span class = "cards-characteristics"> GENRE:</span> 
-                    <span class = "cards-description"> folk </span>
-                </p>
-            </div>
-            <div class = "cards_individualy" id = "card-dunavsko">
-                <img class = "cards-img" src = "images/img/DUNAVKO_HORO.png", title = "dunavsko horo"> 
-                <p> <span class = "cards-title"> DUNAVSKO HORO </span> </p>
-                <p> 
-                    <span class = "cards-characteristics"> ARTIST:</span> 
-                    <span class = "cards-description"> BG song </span>
-                </p>
-                <p>
-                    <span class = "cards-characteristics"> GENRE:</span> 
-                    <span class = "cards-description"> folk </span>
-                </p>
-            </div>
-        </div>
-    </main>
-
 
     <footer>
         <div class = "footer-navbar">
@@ -82,23 +39,6 @@
             </ul>
         </div>
     </footer>
-
-    <script>
-        // create a function called openDetails in which to send the info of id
-        // with link
-        function openDetails(cardId) {
-            window.location.href = "details.html?id=" + cardId;
-        }
-
-        document.querySelectorAll(".cards_individualy").forEach(card => {
-            card.addEventListener("click", () => {
-                openDetails(card.id);
-            });
-        });
-
-    </script>
-    
-    <script src = "cards.js"> </script> 
     
 </body>
 </html>
