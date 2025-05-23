@@ -102,10 +102,10 @@
         play_button.onclick = () => {
             if(audio_file.paused == true){
                 audio_file.play();
-                play_button_icon.src = "images/pause_button.png";
+                play_button_icon.src = "images/pause-button-icon.png";
             }else{
                 audio_file.pause();
-                play_button_icon.src = "images/play_button.png";
+                play_button_icon.src = "images/play-button-icon.png";
             }
         };
 
@@ -127,6 +127,20 @@
         // be able to change the progress bar
         audio_progress_slider.oninput = () => {
             audio_file.currentTime = audio_progress_slider.value;
+        };
+
+        // show/hide the volume change slider
+        audio_volume_button.onclick = () => {
+            if (audio_volume_slider.style.display === "none") {
+                audio_volume_slider.style.display = "inline";
+            } else {
+                audio_volume_slider.style.display = "none";
+            }
+        };
+
+        // be able to change the volume
+        audio_volume_slider.oninput = () => {
+            audio_file.volume = audio_volume_slider.value;
         };
     </script>
 </body>
