@@ -1,6 +1,11 @@
 .audio-container {
     display: flex;
-    background-color: red;
+    width: 16em;
+    height: 2em;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin-top: 1.5em;
 }
 
 #audio-toggle_play_pause {
@@ -9,6 +14,8 @@
     border: none;
     padding: 0em;
     margin: 0em;
+    margin-right: 1em;
+    margin-left: 0.5em;
 }
 
 #audio-toggle-img {
@@ -17,8 +24,13 @@
     border: none;
     padding: 0em;
     margin: 0em;
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
+}
+
+#audio-toggle-img:hover {
+  filter: invert(100%);
+  transition: filter 0.2s ease;
 }
 
 #audio-time_display {
@@ -27,16 +39,25 @@
     border: none;
     padding: 0em;
     margin: 0em;
-    
+    align-content: center;
+    text-align: center;
+    min-width: 5.1em;
+    max-width: 5.1em;
+
+    font-family: 'Quicksand';
 }
 
 #audio-progress_slider{
     display: inline;
-    background: none;
-    border: none;
-    padding: 0em;
-    margin: 0em;
 
+    padding: 0em;
+    margin: 1em;
+    width: 5em;
+    height: 0.75em;
+
+    appearance: none;
+    border: none;
+    cursor: pointer;
 }
 
 #audio-volume_toggle_button {
@@ -53,10 +74,30 @@
     border: none;
     padding: 0em;
     margin: 0em;
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
+}
+
+#audio-volume-img:hover {
+  filter: invert(100%);
+  transition: filter 0.2s ease;
 }
 
 #audio-volume_slider {
-    position: absolute;
+    position: relative;
+
+    right: 0.5em;
+    top: 0em;
+
+    padding: 0em;
+    margin: 1em;
+    width: 4em;
+    height: 0.75em;
+
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    transform: rotate(-90deg);
+
+    margin: 0em;
 }
