@@ -77,14 +77,14 @@
                                 <img src="images/audio-button.png">  
                             </button>
                             <input type="range" id="audio-volume_slider" min="0" max="1" step="0.01" value="1" style="display:none">
+                        </div>
                     </div>
                 </div>
             `;
         } else {
-            document.getElementById("details-container").innerHTML = "<p>no</p>";
+            document.getElementById("details-container").innerHTML = "<p>no</p>";   
         }
-    </script>
-    <script>
+
         const audio_file = document.getElementById("audio-file");
 
         const play_button = document.getElementById("audio-toggle_play_pause");
@@ -107,6 +107,26 @@
                 audio_file.pause();
                 play_button_icon.src = "images/play_button.png";
             }
+        };
+
+        // format time as M:SS
+        function format_time(sec) {
+            const m = Math.floor(sec / 60);
+            const s = Math.floor(sec % 60).toString().padStart(2, '0');
+            return `${m}:${s}`;
+        }
+
+        // update progress bar (the second)
+        audio_file.ontimeupdate = () => {
+            audio_progress_slider.max = audio_file.duration || 0;
+            audio_progress_slider.value = audio_file.currentTime;
+            // formating the time thingy 0:00 / 0:00
+            audio_time_display.textContent = `${format_time(audio_file.currentTime)} / ${format_time(audio_file.duration)}`;
+        };
+
+        // be able to change the progress bar
+        audio_progress_slider.oninput = () => {
+            audio_file.currentTime = audio_progress_slider.value;
         };
     </script>
 </body>
