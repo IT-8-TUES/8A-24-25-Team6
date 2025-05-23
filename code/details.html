@@ -68,18 +68,46 @@
                         <p><span class="cards-characteristics">DESCRIPTION:</span> <span class="cards-description">${cardData.desc}</span></p>
                         <audio id="audio-file" src="${cardData.audio_src}"></audio> 
                         <div class="audio-container">
-                            <button id="audio-play_button">
-                                <img src="images/play-button-icon.png" alt="play" id="audio-play-img"    
+                            <button id="audio-toggle_play_pause">
+                                <img src="images/play-button-icon.png" alt="play" id="audio-toggle-img">
                             </button>
-                            <button id="audio-pause_button">
-                                <img src="images/pause-button-icon.png" alt="pause" id="audio-pause-img"    
+                            <span id="audio-time_display">0:00 / 0:00</span>
+                            <input type="range" id="audio-progress_slider" min="0" value="0" step="0.1">
+                            <button id="audio-volume_toggle_button">
+                                <img src="images/audio-button.png">  
                             </button>
+                            <input type="range" id="audio-volume_slider" min="0" max="1" step="0.01" value="1" style="display:none">
                     </div>
                 </div>
             `;
         } else {
             document.getElementById("details-container").innerHTML = "<p>no</p>";
         }
+    </script>
+    <script>
+        const audio_file = document.getElementById("audio-file");
+
+        const play_button = document.getElementById("audio-toggle_play_pause");
+        const play_button_icon = document.getElementById("audio-toggle-img");
+
+        const audio_time_display = document.getElementById("audio-time_display");
+
+        const audio_progress_slider = document.getElementById("audio-progress_slider");
+
+        const audio_volume_button = document.getElementById("audio-volume_toggle_button");
+        const audio_volume_slider = document.getElementById("audio-volume_slider");
+
+
+        // audio play/pause toggle button
+        play_button.onclick = () => {
+            if(audio_file.paused == true){
+                audio_file.play();
+                play_button_icon.src = "images/pause_button.png";
+            }else{
+                audio_file.pause();
+                play_button_icon.src = "images/play_button.png";
+            }
+        };
     </script>
 </body>
 </html>
