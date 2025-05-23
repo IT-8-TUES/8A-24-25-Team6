@@ -5,7 +5,8 @@ const cardsData = {
         genre: "folk",
         desc: "A tender, emotional ballad from Strandzha, the white rose symbolizes purity and unfulfilled longing",
         img_title: "bqla roza",
-        img_src: "images/img/BQLA_ROZA.png"
+        img_src: "images/img/BQLA_ROZA.png",
+        audio_src: "audio/BQLA_ROZA.mp3"
     },
     "card-qbulka":{
         title: "MQTALO LENCHE QBULKA",
@@ -13,7 +14,8 @@ const cardsData = {
         genre: "folk",
         desc: "A playful folk song that tells the story of Lenche, a girl tossing an apple to get attention",
         img_title: "mqtalo lenche qbulka",
-        img_src: "images/img/QBULKA.png"
+        img_src: "images/img/QBULKA.png",
+        audio_src: "audio/LENCHE_QBULKA.mp3"
     },
     "card-dunavsko":{
         title: "DUNAVSKO HORO",
@@ -21,6 +23,7 @@ const cardsData = {
         genre: "folk",
         desc: "One of Bulgaria\'s instrumental folk pieces, often played at weddings and national holidays",
         img_title: "dunavsko horo",
-        img_src: "images/img/DUNAVKO_HORO.png"
+        img_src: "images/img/DUNAVKO_HORO.png",
+        audio_src: "audio/DUNAVSKO_HORO.mp3"
     }
 };

@@ -6,6 +6,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>swiftie</title>
     <link rel="stylesheet" href="navigation_bar.css">
+    <link rel="stylesheet" href="audio_controls.css">
     <link rel="stylesheet" href="cards_display.css">
 </head>
 <body>
@@ -28,7 +29,7 @@
             </div>
         </div>
         <div class = "header-site_navigation_preview">
-            <a href="index.html" class="back-button">&lt;</a>
+            <a href="home.html" class="back-button">&lt;</a>
             <p> home </p>     
         </div>
     </header>
@@ -65,7 +66,15 @@
                         <p><span class="cards-characteristics">ARTIST:</span> <span class="cards-description">${cardData.artist}</span></p>
                         <p><span class="cards-characteristics">GENRE:</span> <span class="cards-description">${cardData.genre}</span></p>
                         <p><span class="cards-characteristics">DESCRIPTION:</span> <span class="cards-description">${cardData.desc}</span></p>
-                    </div>        
+                        <audio id="audio-file" src="${cardData.audio_src}"></audio> 
+                        <div class="audio-container">
+                            <button id="audio-play_button">
+                                <img src="images/play-button-icon.png" alt="play" id="audio-play-img"    
+                            </button>
+                            <button id="audio-pause_button">
+                                <img src="images/pause-button-icon.png" alt="pause" id="audio-pause-img"    
+                            </button>
+                    </div>
                 </div>
             `;
         } else {
