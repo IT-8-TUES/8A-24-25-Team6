@@ -6,6 +6,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>swiftie</title>
     <link rel="stylesheet" href="navigation_bar.css">
+    <link rel="stylesheet" href="video.css">
 </head>
 <body>
     <header>
@@ -26,10 +27,20 @@
                 <input type="text" placeholder="SEARCH..">
             </div>
         </div>
-        <div class = "header-site_navigation_preview">
-            <p style="display: hidden; color:rgb(230, 206, 214);"> . </p>
-        </div>
     </header>
+
+    <section class="video-section">
+        <video autoplay muted id="bg-video">
+            <source src="/code/images/5701228-uhd_4096_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        
+        <div class="overlay-content">
+            <div class="text-container">Welcome to Swiftie</div>
+            <a href="home.html" class="explore-btn">Explore Now</a>
+        </div>
+        
+      </section>
 
     <footer>
         <div class = "footer-navbar">
@@ -39,6 +50,6 @@
             </ul>
         </div>
     </footer>
-    
+        <script src="/code/videoLoop.js"></script>
 </body>
 </html>
