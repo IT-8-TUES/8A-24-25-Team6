@@ -58,20 +58,19 @@
 
 .platform-logo {
     cursor: pointer;
-    padding: 0;
     margin: 1em;
     width: 8em;
     height: 8em;
-    box-shadow: 0rem 0rem 1.25rem 0.1875rem rgba(96, 96, 96, 0.266);
+    box-shadow: 0rem 0rem 0.3rem 0.1rem rgba(96, 96, 96, 0.15);
     border-radius: 1em;
-    transition: width 0.1s, height 0.1s, box-shadow 0.1s, margin 0.1s;
+    transition: transform 0.2s ease, box-shadow 0.1s;
 }
 
 .platform-logo:hover {
-    width: 9em;
-    height: 9em;
+    width: 8.5em;
+    height: 8.5em;
     margin: 0.5em;
-    box-shadow: 0rem 0rem 2rem 2rem rgba(96, 96, 96, 0.511);
+    box-shadow: 0rem 0rem 1rem 1rem rgba(96, 96, 96, 0.1);
 }
 
 /* fonts here bc idk how else */
