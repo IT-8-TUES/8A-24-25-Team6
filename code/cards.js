@@ -61,5 +61,96 @@ const cardsData = {
         img_title: "magnetic",
         img_src: "images/img/MAGNETIC.png",
         audio_src: "audio/MAGNETIC.mp3"
+    },
+    "card-rock_lobster": {
+        title: "ROCK LOBSTER",
+        artist: "The B-52\'s",
+        genre: "rock",
+        desc: "An ode to embracing the unconventional, the song's absurdity challenges norms",
+        img_title: "rock lobster",
+        img_src: "images/img/ROCK_LOBSTER.png",
+        audio_src: "audio/ROCK_LOBSTER.mp3"
+    },
+    "card-blue": {
+        title: "BLUE",
+        artist: "Yung Kai",
+        genre: "pop",
+        desc: "A chill tune that's perfect for late-night drives or moments of reflection",
+        img_title: "blue",
+        img_src: "images/img/BLUE.png",
+        audio_src: "audio/BLUE.mp3"
+    },
+    "card-saccharine": {
+        title: "SACCHARINE",
+        artist: "Violent Vira",
+        genre: "alternative metal",
+        desc: "The song blends sweetness with undertones of intensity",
+        img_title: "saccharine",
+        img_src: "images/img/SACCHARINE.png",
+        audio_src: "audio/SACCHARINE.mp3"
+    },
+    "card-i_dont_care": {
+        title: "I DON'T CARE",
+        artist: "Violent Vira",
+        genre: "alternative metal",
+        desc: "Showcasing emotional numbness, an anthem for those seeking liberation from societal expectations",
+        img_title: "i don't care",
+        img_src: "images/img/I_DONT_CARE.png",
+        audio_src: "audio/I_DONT_CARE.mp3"
+    },
+    "card-lazy_song": {
+        title: "THE LAZY SONG",
+        artist: "Bruno Mars",
+        genre: "pop",
+        desc: "The song celebrates the importance of rest and self-care in a fast-paced world",
+        img_title: "the lazy song",
+        img_src: "images/img/THE_LAZY_SONG.png",
+        audio_src: "audio/THE_LAZY_SONG.mp3"
+    },
+    "card-nothing_else_matters": {
+        title: "NOTHING ELSE MATTERS",
+        artist: "Metallica",
+        genre: "heavy metal",
+        desc: "A heartfelt tune that emphasizes the significance of staying true to oneself",
+        img_title: "nothing else matters",
+        img_src: "images/img/NOTHING_ELSE_MATTERS.png",
+        audio_src: "audio/NOTHING_ELSE_MATTERS.mp3"
+    },
+    "card-wish_i_had_an_angel": {
+        title: "WISH I HAD AN ANGEL",
+        artist: "Nightwish",
+        genre: "symphonic metal",
+        desc: "The song combines heavy metal riffs with orchestral elements to explore themes of desire and temptation",
+        img_title: "wish i had an angel",
+        img_src: "images/img/WISH_I_HAD_AN_ANGEL.png",
+        audio_src: "audio/WISH_I_HAD_AN_ANGEL.mp3"
+    },
+    "card-gone": {
+        title: "GONE",
+        artist: "Rosé",
+        genre: "K-pop",
+        desc: "The track represents the lingering ache of heartbreak and the journey towards healing",
+        img_title: "gone",
+        img_src: "images/img/GONE.png",
+        audio_src: "audio/GONE.mp3"
+    },
+    "card-omg": {
+        title: "OMG",
+        artist: "NewJeans",
+        genre: "K-pop",
+        desc: "A bubbly infectious track that captures the whirlwind of emotions experienced during a budding romance",
+        img_title: "omg",
+        img_src: "images/img/OMG.png",
+        audio_src: "audio/OMG.mp3"
+    },
+    "card-sad_song": {
+        title: "SAD SONG",
+        artist: "P1Harmony",
+        genre: "K-pop",
+        desc: "Reflection of the struggle of maintaining a facade of happiness while grappling with inner turmoil",
+        img_title: "sad song",
+        img_src: "images/img/SAD_SONG.png",
+        audio_src: "audio/SAD_SONG.mp3"
     }
+
 };
