@@ -1,0 +1,88 @@
+/* container for the text in info page */
+.info_container {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 60em;
+    width: 90%;
+    padding: 2rem;
+    border-width: 1rem;
+    border-radius: 1em;
+    border-color: rgba(161, 161, 161, 0.194);
+    box-shadow: 0rem 0rem 1.25rem 0.1875rem rgba(166, 166, 166, 0.188);
+    border-style: double;
+}
+
+/*playlist page */
+.playlist-wrapper {
+    border: 1rem double rgba(161, 161, 161, 0.194);
+    padding: 3rem;
+    margin: 3.125rem auto;
+    max-width: 62.5rem;
+    background-color: rgb(249, 249, 249);
+    border-radius: 1em;
+    box-shadow: 0rem 0rem 1.25rem 0.1875rem rgba(166, 166, 166, 0.188);
+}
+
+/* flexbox */
+.playlist_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+/* playlist content */
+.playlist-content {
+    flex-grow: 1;
+}
+
+.platform-title {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-size: 1.2em;
+    font-family: 'Quicksand-SemiBold';
+}
+
+.details_container_pl {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 40em;
+    max-height: 22em;
+}
+
+.platform-logo {
+    cursor: pointer;
+    padding: 0;
+    margin: 1em;
+    width: 8em;
+    height: 8em;
+    box-shadow: 0rem 0rem 1.25rem 0.1875rem rgba(96, 96, 96, 0.266);
+    border-radius: 1em;
+    transition: width 0.1s, height 0.1s, box-shadow 0.1s, margin 0.1s;
+}
+
+.platform-logo:hover {
+    width: 9em;
+    height: 9em;
+    margin: 0.5em;
+    box-shadow: 0rem 0rem 2rem 2rem rgba(96, 96, 96, 0.511);
+}
+
+/* fonts here bc idk how else */
+.header-navbar p {
+font-family: 'Quicksand-SemiBold';
+}
+
+.platform-title {
+font-family: 'Quicksand-Medium';
+}
+
+.footer-navbar p {
+font-family: 'Quicksand-Light';
+}
