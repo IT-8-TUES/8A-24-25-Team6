@@ -33,11 +33,12 @@ body {
     color: rgb(39, 39, 39);
     font-size: 2rem;
     font-family: 'Quicksand';
+    background-color: rgb(248, 252, 251);
 }
 
 /* the navigation bar basic style */
 .header-navbar {
-    background-color: rgb(177, 138, 152);
+    background-color: rgb(177, 138, 152);                        
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,16 +66,16 @@ ul {
     justify-content: center;
     list-style-type: none;
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     margin: 0;
     text-align: center;
 }
 
 /* organize the uh text in the lists */
 li {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 /* the logo stuff */
@@ -98,7 +99,7 @@ li {
 .nav_list li:not(:last-child)::after {
     content: "|";
     position: absolute;
-    right: -12px;
+    right: -1.1rem;
     color: #4b3d3d;
     font-weight: 300;
 }
@@ -143,14 +144,20 @@ input:focus { outline: none; }
 
 /* the navigation bar basic style */
 .header-site_navigation_preview {
+    position: relative; 
+
+    height: 3rem;       
+
     margin-top: 0.8em;
     margin-bottom: 0.8em;
-    background-color: rgb(230, 206, 214);
+
+    background-color: rgb(227, 199, 209);
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0em 0em;
+    padding: 0.5em 0em;
 }
 
 .header-site_navigation_preview p {
@@ -160,16 +167,6 @@ input:focus { outline: none; }
 }
 
 /* back button */
-.header-site_navigation_preview {
-    position: relative;          
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
-    background-color: rgb(230, 206, 214);
-    text-align: center;         
-    padding: 0.5em 0;
-    height: 3rem;                
-}
-
 .back-button {
     position: absolute;          
     left: 1em;                   
@@ -179,7 +176,7 @@ input:focus { outline: none; }
     font-weight: 700;
     color: rgb(177, 138, 152);
     padding: 0.2em 0.6em;
-    border: 2px solid rgb(177, 138, 152);
+    border: 0.15rem solid rgb(177, 138, 152);
     border-radius: 5px;
     cursor: pointer;
 
@@ -192,7 +189,6 @@ input:focus { outline: none; }
 
 /* footer stuff */
 .footer-navbar {
-    margin-top: 30px;
     background-color: rgb(177, 138, 152);
     display: flex;
     justify-content: space-around;
