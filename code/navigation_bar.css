@@ -33,6 +33,7 @@ body {
     color: rgb(39, 39, 39);
     font-size: 2rem;
     font-family: 'Quicksand';
+    background-color: rgb(248, 252, 251);
 }
 
 /* the navigation bar basic style */
@@ -188,7 +189,6 @@ input:focus { outline: none; }
 
 /* footer stuff */
 .footer-navbar {
-    margin-top: 1em;
     background-color: rgb(177, 138, 152);
     display: flex;
     justify-content: space-around;
