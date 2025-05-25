@@ -1,0 +1,206 @@
+/* importing fonts (quicksand) */
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/static/Quicksand-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Quicksand-Light';
+  src: url('fonts/static/Quicksand-Light.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Quicksand-Medium';
+  src: url('fonts/static/Quicksand-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Quicksand-SemiBold';
+  src: url('fonts/static/Quicksand-SemiBold.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Quicksand-Bold';
+  src: url('fonts/static/Quicksand-Bold.ttf');
+  font-weight: 700;
+}
+
+/* basic body style stuff */
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    font-size: 2rem;
+    font-family: 'Quicksand';
+    background-color: rgb(248, 252, 251);
+}
+
+/* the navigation bar basic style */
+.header-navbar {
+    background-color: rgb(177, 138, 152);                        
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3em 0.4em;
+}
+
+/* links to not be underlined/black */
+a {
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: black;
+    font-family: 'Quicksand-SemiBold';
+}
+
+a:active {
+    color: rgb(54, 54, 54);
+}
+
+/* organize the lists */
+ul {
+    justify-content: center;
+    list-style-type: none;
+    display: flex;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    margin: 0;
+    text-align: center;
+}
+
+/* organize the uh text in the lists */
+li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* the logo stuff */
+.logo, .nav_list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+#logo_icon {
+    height: 2em;
+    width: auto;
+}
+/* liniite between nav items */
+.nav_list li {
+    position: relative;
+}
+
+.nav_list li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -1.1rem;
+    color: #4b3d3d;
+    font-weight: 300;
+}
+
+/* the search bar*/
+.header-input_wrapper {
+    margin: 0em;
+}
+
+input {
+    right: 0em;
+    position: static;
+    width: 8em;
+
+    background-color: rgb(221, 221, 221);
+    border-color: white;
+    border-style: double;
+    border-radius: 0.3em;
+    border-width: 0.2em;
+    padding: 0.3em; 
+    padding-right: 0em;
+
+    /* style font */
+    text-decoration: none;
+    color: rgb(39, 39, 39);
+    font-size: 1.5rem;
+    font-family: 'Quicksand'
+}
+
+input:hover { background-color: rgb(189, 189, 189); }
+input:focus { outline: none; }
+
+/* the icon INSIDE the search bar*/
+#search_icon {
+    position: absolute;
+    right: 0.7em;
+    top: 1.3em;
+    width: 1.2em;
+    height: auto;
+    pointer-events: none;
+}
+
+/* the navigation bar basic style */
+.header-site_navigation_preview {
+    position: relative; 
+
+    height: 3rem;       
+
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+
+    background-color: rgb(227, 199, 209);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5em 0em;
+}
+
+.header-site_navigation_preview p {
+    display: flex;
+    align-items: center;
+    margin: 0.3rem;
+}
+
+/* back button */
+.back-button {
+    position: absolute;          
+    left: 1em;                   
+    top: 50%;                   
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(177, 138, 152);
+    padding: 0.2em 0.6em;
+    border: 0.15rem solid rgb(177, 138, 152);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.back-button:hover {
+    background-color: rgb(177, 138, 152);
+    color: white;
+}
+
+/* footer stuff */
+.footer-navbar {
+    background-color: rgb(177, 138, 152);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.3em 0.4em;
+}
+
+#footer_p {
+    padding-right: 3rem;
+}
+
+span {
+    margin: 0em;
+    padding: 0em;
+}
