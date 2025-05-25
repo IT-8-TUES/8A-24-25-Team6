@@ -176,7 +176,7 @@ input:focus { outline: none; }
     font-weight: 700;
     color: rgb(177, 138, 152);
     padding: 0.2em 0.6em;
-    border: 0.45rem solid rgb(177, 138, 152);
+    border: 0.15rem solid rgb(177, 138, 152);
     border-radius: 5px;
     cursor: pointer;
 
