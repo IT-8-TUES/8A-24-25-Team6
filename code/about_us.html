@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <title>swiftie</title>
-    <link rel="stylesheet" href="navigation_bar.css">
+    <meta charset="UTF-8" />
+    <title>Swiftie - About Us</title>
+    <link rel="stylesheet" href="about_us.css" />
+    <link rel="stylesheet" href="navigation_bar.css" />
 </head>
 <body>
-    <header>
-        <div class = "header-navbar">
-            <ul class = "logo">
-                <li><img src="images/logo.png" 
-                    alt="logo icon" id="logo_icon"></li>
-                <li><p><strong>swiftie</strong></p></li>
-            </ul>
-            <ul class = "nav_list">
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="playlist.html">PLAYLIST</a></li>
-                <li><a href="info.html">INFO</a></li>
-                <li><a href="about_us.html">ABOUT US</a></li>
-            </ul> 
-            <div class = "header-input_wrapper">
-                <img src="images/search-icon.png" alt="search icon" id="search_icon">
-                <input type="text" placeholder="SEARCH..">
-            </div>
-        </div>
-        <div class = "header-site_navigation_preview">
-            <p>about us</p>
-        </div>
-    </header>
 
-    <footer>
-        <div class = "footer-navbar">
-            <ul class = "nav_list">
-                <p id = "footer_p"> Thank you for visiting our site! </p>
-                <a id = "footer_a" href="privacy_policy.html">PRIVACY POLICY</a></li>
-            </ul>
+<header>
+    <div class="header-navbar container">
+        <ul class="logo">
+            <li><img src="images/logo.png" alt="logo icon" id="logo_icon" /></li>
+            <li><p><strong>swiftie</strong></p></li>
+        </ul>
+        <ul class="nav_list">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="playlist.html">PLAYLIST</a></li>
+            <li><a href="info.html">INFO</a></li>
+            <li><a href="about_us.html">ABOUT US</a></li>
+        </ul>
+        <div class="header-input_wrapper">
+            <img src="images/search-icon.png" alt="search icon" id="search_icon" />
+            <input type="text" placeholder="SEARCH.." />
         </div>
-    </footer>
-    
+    </div>
+    <div class="header-site_navigation_preview">
+        <p>about us</p>
+    </div>
+</header>
+
+<main class="main-content">
+    <h2 class="section-title">About Us 🎷</h2>
+
+    <p class="text-center max-width"> <strong>Swiftie</strong> is a student project created to offer a simple and easy-to-use platform for music streaming.</p>
+
+    <p class="text-center max-width">Swiftie allows users to:</p>
+    <ul class="list max-width">
+        <li>Create and listen to their own playlists</li>
+        <li>Discover new music and favorite artists</li>
+        <li>Enjoy a clean and simple design</li>
+    </ul>
+
+    <p class="text-center max-width">Our mission is to create software that is easy to use and understand — for both older users and busy people.</p>
+
+    <h2 class="section-title">Why Did We Create Swiftie?</h2>
+    <p class="text-center max-width">We wanted to make something different and practical — not just a project for grades, but an app that looks and feels like a real product.</p>
+
+    <h2 class="section-title">Our Team 👨‍💻👩‍💻</h2>
+    <p class="text-center max-width">Swiftie was created by students interested in programming, design, and music. Each of us contributed ideas, code, and creativity.</p>
+
+    <h2 class="section-title">Contact 📬</h2>
+    <p class="text-center max-width">If you have suggestions or just want to share your opinion, contact us at: <strong>contactswiftie@gmail.com</strong></p>
+</main>
+
+<footer>
+    <div class="footer-navbar container">
+        <ul class="nav_list">
+            <p id="footer_p"> Thank you for visiting our site! </p>
+            <a id="footer_a" href="privacy_policy.html">PRIVACY POLICY</a>
+        </ul>
+    </div>
+</footer>
+
+<script src="search.js"></script>
 </body>
 </html>
