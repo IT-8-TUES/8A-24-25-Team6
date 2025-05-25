@@ -26,7 +26,7 @@
     background-color: rgb(177, 138, 152);
     color: white;
     border: 0.125rem solid rgb(221, 213, 213);
-    border-radius: 30px;
+    border-radius: 2em;
     transition: 0.3s ease;
   }
   .overlay-content {
@@ -43,7 +43,7 @@
   .text-container {
     background-color: rgba(0, 0, 0, 0.5); 
     padding: 0.8rem 1.5rem;
-    border-radius: 20px;
+    border-radius: 2em;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;

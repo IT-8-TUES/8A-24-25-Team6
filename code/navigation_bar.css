@@ -37,7 +37,7 @@ body {
 
 /* the navigation bar basic style */
 .header-navbar {
-    background-color: rgb(177, 138, 152);
+    background-color: #FF858D;                              /* color */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,16 +65,16 @@ ul {
     justify-content: center;
     list-style-type: none;
     display: flex;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     margin: 0;
     text-align: center;
 }
 
 /* organize the uh text in the lists */
 li {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 /* the logo stuff */
@@ -98,7 +98,7 @@ li {
 .nav_list li:not(:last-child)::after {
     content: "|";
     position: absolute;
-    right: -12px;
+    right: -1.1rem;
     color: #4b3d3d;
     font-weight: 300;
 }
@@ -145,7 +145,7 @@ input:focus { outline: none; }
 .header-site_navigation_preview {
     margin-top: 0.8em;
     margin-bottom: 0.8em;
-    background-color: rgb(230, 206, 214);
+    background-color: #ffadb3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +164,7 @@ input:focus { outline: none; }
     position: relative;          
     margin-top: 0.8em;
     margin-bottom: 0.8em;
-    background-color: rgb(230, 206, 214);
+    background-color: #ffadb3;
     text-align: center;         
     padding: 0.5em 0;
     height: 3rem;                
@@ -179,7 +179,7 @@ input:focus { outline: none; }
     font-weight: 700;
     color: rgb(177, 138, 152);
     padding: 0.2em 0.6em;
-    border: 2px solid rgb(177, 138, 152);
+    border: 0.5rem solid rgb(177, 138, 152);
     border-radius: 5px;
     cursor: pointer;
 
@@ -192,7 +192,7 @@ input:focus { outline: none; }
 
 /* footer stuff */
 .footer-navbar {
-    margin-top: 30px;
+    margin-top: 1em;
     background-color: rgb(177, 138, 152);
     display: flex;
     justify-content: space-around;
